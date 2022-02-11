@@ -44,7 +44,7 @@ marathoners <- athlete_events %>%
   mutate(Height = Height / 2.54)
 
 # Olympic Rings Photo
-rings <- readPNG("Flags and Icons/Olympics.png")
+rings <- readPNG("Flags and Icons/Logos/Olympic Rings.png")
 
 ### Plotting!
 ggplot(marathoners, aes(x = Year,

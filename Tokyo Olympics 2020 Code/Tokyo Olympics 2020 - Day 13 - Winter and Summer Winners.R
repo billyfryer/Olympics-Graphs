@@ -58,7 +58,7 @@ eddy <- c("Eddy Alvarez", "USA", "Baseball, Speed Skating",
 both_seasons <- rbind(both_seasons, eddy)
 
 # Fix Paths for Flags
-both_seasons$Country <- paste0("Flags and Icons/", both_seasons$Country)
+both_seasons$Country <- paste0("Flags and Icons/Flags/", both_seasons$Country)
 
 # GT Table
 both_seasons %>% 
@@ -96,6 +96,7 @@ gt() %>%
   tab_spanner(
     label = "Total Medals",
     columns = c(Gold, Silver, Bronze)
-  ) %>%
-  # Save
-  gtsave("Day 13- Winter and Summer Winners.png")
+  )
+
+# Save
+#gtsave("Day 13- Winter and Summer Winners.png")

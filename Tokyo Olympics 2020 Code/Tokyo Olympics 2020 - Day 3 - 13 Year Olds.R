@@ -42,11 +42,11 @@ youngest_winners <- left_join(youngest_winners, noc_regions, by = "NOC") %>%
 
 # Join Country Flag
 flags <- data.frame(NOC = c("USA", "SUI", "GER", "CHN", "JPN"),
-                    Flag = c("Flags and Icons/USA", 
-                             "Flags and Icons/Switzerland", 
-                             "Flags and Icons/Germany",
-                             "Flags and Icons/China",
-                             "Flags and Icons/Japan"))
+                    Flag = c("Flags and Icons/Flags/USA", 
+                             "Flags and Icons/Flags/Switzerland", 
+                             "Flags and Icons/Flags/Germany",
+                             "Flags and Icons/Flags/China",
+                             "Flags and Icons/Flags/Japan"))
 
 # Join flags to youngest_winners
 youngest_winners <- left_join(youngest_winners, flags, by = "NOC") %>% 
@@ -86,5 +86,6 @@ youngest_winners %>%
         filename = paste0(.x, ".png"),
         height = 25
       ))
-    }) %>% 
-  gtsave("Day 3- 13 Year Olds.png")
+    })
+
+gtsave("Day 3- 13 Year Olds.png")

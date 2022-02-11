@@ -73,8 +73,8 @@ top_10_all_time <- left_join(top_10_all_time, noc_regions, by = "NOC") %>%
   select(Name, Sport, Country, everything(), -NOC, -notes)
 
 # Fix paths for images
-top_10_all_time$Country <- paste0("Flags and Icons/", top_10_all_time$Country)
-top_10_all_time$Sport <- paste0("Flags and Icons/", top_10_all_time$Sport)
+top_10_all_time$Country <- paste0("Flags and Icons/Flags/", top_10_all_time$Country)
+top_10_all_time$Sport <- paste0("Flags and Icons/Icons/", top_10_all_time$Sport)
 
 # Data Viz
 ### Table Making
@@ -151,5 +151,6 @@ top_10_all_time %>%
       map_chr(x, ~ local_image(
         filename = paste0(.x, ".jpg")
       ))
-    }) %>%
-  gtsave("Day 9- Top 10 Performances.png")
+    })
+
+gtsave("Day 9- Top 10 Performances.png")

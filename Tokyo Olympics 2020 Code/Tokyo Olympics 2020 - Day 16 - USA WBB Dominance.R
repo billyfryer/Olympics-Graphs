@@ -5,7 +5,7 @@
 # Data Self Collected from Wikipedia
 library(tidyverse)
 library(devtools)
-#install_github("hrbrmstr/waffle")
+# install_github("hrbrmstr/waffle")
 library(waffle)
 
 # Data Manipulation
@@ -13,7 +13,7 @@ usa_wbb_legacy <- read_csv("Data Sets/USA WBB Legacy.csv")
 
 # Long Data
 long_usa_wbb_legacy <- usa_wbb_legacy %>% 
-  # COnvert Data to Long
+  # Convert Data to Long
   gather("championship",
          "number",
          -Name) %>% 

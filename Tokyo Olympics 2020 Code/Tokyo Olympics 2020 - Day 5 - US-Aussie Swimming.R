@@ -48,8 +48,8 @@ complete_data <- left_join(empty_df, swimmers,
 
 # Flags
 flags <- data.frame(NOC = c("USA", "AUS"),
-                    Flag = c("Flags and Icons/USA.png",
-                            "Flags and Icons/Australia.png"))
+                    Flag = c("Flags and Icons/Flags/USA.png",
+                            "Flags and Icons/Flags/Australia.png"))
 
 # Left Join complete_data and flags
 full <- left_join(complete_data, flags)

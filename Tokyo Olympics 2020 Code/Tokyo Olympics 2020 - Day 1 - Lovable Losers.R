@@ -51,11 +51,11 @@ no_medals <- summarized_athletes %>%
 
 # Make DF of flags and continents to label bars
 flags_df <- data.frame(NOC = c("CAN", "AUT", "PER", "DEN", "ITA"),
-                       Flag = c("Flags and Icons/Canada.png", 
-                                "Flags and Icons/Austria.png",
-                                "Flags and Icons/Peru.png",
-                                "Flags and Icons/Denmark.png",
-                                "Flags and Icons/Italy.png"),
+                       Flag = c("Flags and Icons/Flags/Canada.png", 
+                                "Flags and Icons/Flags/Austria.png",
+                                "Flags and Icons/Flags/Peru.png",
+                                "Flags and Icons/Flags/Denmark.png",
+                                "Flags and Icons/Flags/Italy.png"),
                        Continent = c("Americas",
                                      "Europe",
                                      "Americas",
