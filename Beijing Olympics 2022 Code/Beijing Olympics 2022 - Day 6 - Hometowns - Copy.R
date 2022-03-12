@@ -4,8 +4,12 @@ library(tidyverse)
 library(gt)
 library(emoji)
 
+# Note this data is only through Day 6
+# I did not continue to update this dataset after the Games Ended
+
 # Read xlsx sheet
 data <- read_xlsx("Data Sets/Team USA Medalists Day 6 Hometowns.xlsx")
+
 
 clean_data <- data %>% 
   # Pull Gender from event name and then edit it to say Male or Female
@@ -61,6 +65,7 @@ clean_data %>%
   # Center Columns
   cols_align(align = "center") %>% 
   # Change Font (Selected Font is from Google)
-  opt_table_font(google_font(name = "Acme")) %>% 
-  #gtsave
-  gtsave("Day 6- West vs East Coast Snow.png")
+  opt_table_font(google_font(name = "Acme")) 
+
+# gtsave
+# gtsave("Day 6- West vs East Coast Snow.png")

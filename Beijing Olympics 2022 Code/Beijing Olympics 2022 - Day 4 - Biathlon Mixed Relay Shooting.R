@@ -28,7 +28,7 @@ data2 <- data %>%
   ) %>% 
   # Reduce Size of Data Frame Again
   select(rank, country, result, Prone_Frac:Total_Pct) %>% 
-  # Arrange by Decending Total Shooting Percent
+  # Arrange by Descending Total Shooting Percent
   arrange(desc(Total_Pct))
 
 data3 <- data2 %>% 
@@ -37,7 +37,7 @@ data3 <- data2 %>%
                            rank == 2 ~ "Silver",
                            rank == 3 ~ "Bronze",
                            TRUE ~ as.character(rank)),
-         # Convere Medal to emojis
+         # Convert Medal to emojis
          emoji = case_when(medal %in% c("Gold", "Silver", "Bronze") ~
                              emoji::medal(medal),
                            TRUE ~ medal)) %>% 

@@ -42,8 +42,11 @@ ggplot(athlete_counts, aes(x = reorder(Country, desc(Athletes)),
     plot.title = element_text(hjust = 0.5),
     plot.subtitle = element_text(hjust = 0.5),
     plot.caption = element_text(hjust = 0.5),
+    # No Vertical Grid Lines
     panel.grid.major.x = element_blank(),
+    # Black Horizontal Grid Lines
     panel.grid.major.y = element_line(color = "black"),
+    # No minor grid lines
     panel.grid.minor = element_blank()
     ) +
   # Attach Rings Photo

@@ -1,11 +1,13 @@
 # Beijing Olympics Day 0 Graph
+
+# Libraries
 library(tidyverse)
 library(readxl)
 library(ggplot2)
 library(ggthemes)
 library(gganimate)
 
-#' Olympic Data right now is impossible to scrape, 
+#' Olympic Data right now is impossible to scrape (for now), 
 #' So I went to Olympics.com (specifically, https://olympics.com/beijing-2022/olympic-games/en/results/ice-hockey/results-women-gpa-000100-.htm) 
 #' And I just copied and pasted the data I wanted in an excel sheet
 

@@ -4,7 +4,6 @@ library(lubridate)
 library(ggplot2)
 library(ggimage)
 library(scales)
-# devtools:install_github("AllanCameron/geomtextpath")
 library(geomtextpath)
 
 # Read in Data
