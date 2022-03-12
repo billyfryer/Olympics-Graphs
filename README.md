@@ -4,7 +4,7 @@ During the 2020 Tokyo Olympic Games, I decided to make a graphic for every day s
 
 This GitHub Repo is organized in the following way:
 
-The **Data Sets** zip file contains all 3 data sets used in these graphics. The original folder was too large to put on GitHub as is thus the .zip file needs to be unzipped when downloaded. The *noc_regions.csv* and *athlete_events.csv* files are both from https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results/code?datasetId=31029&language=R and the *USA WBB Legacy.csv* is one that I created using Wikipedia. The only other data used is on Day 12. That data is from USA Today and I found it via Insider.com. That data is directly typed into the R Script for Day 12. For Beijing, I made a lot of datasets on my own since the Kaggle Data Sets I was using did not have 2018 data. The data sources are all in the respective codes.
+The **Data Sets** zip file contains all of the data sets used in these graphics. The original folder was too large to put on GitHub as is thus the .zip file needs to be unzipped when downloaded. The *noc_regions.csv* and *athlete_events.csv* files are both from https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results/code?datasetId=31029&language=R and the *USA WBB Legacy.csv* is one that I created using Wikipedia. The only other data used is on Day 12. That data is from USA Today and I found it via Insider.com. That data is directly typed into the R Script for Day 12. For Beijing, I made a lot of datasets on my own since the Kaggle Data Sets I was using did not have 2018 data. The data sources are all in the respective codes.
 
 The **Flags and Icons** folder contains all flags and sport icons used in the graphics.
 
